@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+div.col-sm-6 {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px 5px 40px;
+  position: relative;
+}
+i.fa {
+  display: block;
+  width: 100%;
+  font-size: 50px;
+}
+small {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+small::before {
+  content: "v.: ";
+}
+span.text-muted {
+  display: block;
+  margin-top: 5px;
+}
