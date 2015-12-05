@@ -19,9 +19,16 @@ small {
   position: absolute;
   top: 10px;
   left: 20px;
+  background-color: #eee;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d6d6d6;
+  padding: 2px;
+  border-radius: 100%;
 }
 small::before {
-  content: "v.: ";
+  content: "ver.";
+  display: block;
 }
 span.text-muted {
   display: block;
