@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   text-align: center;
+  font-family: monospace;
+  font-size: 14px;
 }
 
 div.col-sm-6 {
@@ -23,12 +25,16 @@ small {
   width: 40px;
   height: 40px;
   border: 2px solid #d6d6d6;
-  padding: 2px;
   border-radius: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
 }
 small::before {
   content: "ver.";
-  display: block;
+  
 }
 span.text-muted {
   display: block;
