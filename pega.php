@@ -3,7 +3,15 @@
 
 $url = "https://fortawesome.github.io/Font-Awesome/cheatsheet/";
 
-$html = file_get_contents($url);
+$cURL = curl_init();
+
+curl_setopt_array($cURL, array(
+    CURLOPT_RETURNTRANSFER => 1,
+    CURLOPT_URL => $url
+));
+
+$html = curl_exec($cURL);
+curl_close($cURL);
 
 $pega = explode("<div class=\"row\">", $html);
 $pega = explode("<footer id=\"footer\" class=\"footer hidden-print\">", $pega[2]);
