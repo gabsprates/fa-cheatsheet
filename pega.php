@@ -1,7 +1,7 @@
 <?php
 
 
-$url = "https://fortawesome.github.io/Font-Awesome/cheatsheet/";
+$url = "http://fontawesome.io/cheatsheet/";
 
 $cURL = curl_init();
 
